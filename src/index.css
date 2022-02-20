@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202632;
+  color: white;
+}
+
+.card{
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #313a49;
+  padding: 40px 5%;
+  border-radius:15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.title{
+  color: #52ffab;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.text_tip{
+  font-size: 26px;
+  font-weight: 600;
+  color: #e2f3fd;
+}
+
+.container_tips{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  margin: 40px 0;
+}
+
+.line_web{
+  display: block;
+}
+
+.line_mobile{
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .line_web{
+    display: none;
+  }
+  
+  .line_mobile{
+    display: block;
+  }
+}
+
+.text_tip{
+  font-size: 24px;
+  text-align: center;
+}
+
+.animation_loading{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: animation_rotate;
+}
+@keyframes animation_rotate {
+  0% {
+    transform: scale(1.5) rotate(360deg);
+  }
+  20% {
+    transform: scale(1.5) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(0deg);
+  }
+}
