@@ -16,9 +16,9 @@ const App = () => {
       catch{
          console.log('erro')
       }    
-      setTimeout(() => {
+      // setTimeout(() => {
          setLoading(false)
-      }, 500);
+      // }, 500);
    } 
    
    useEffect(() => {
@@ -26,7 +26,12 @@ const App = () => {
       screenTip()
    }, [loading])
 
-   
+
+   setTimeout(() => {
+      if(loading && Object.keys(tip).length === 0){
+         newTip()
+      }
+   }, 1000);
 
    const screenTip = () =>{
       return (
