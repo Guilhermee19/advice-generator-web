@@ -69,6 +69,15 @@ const App = () => {
                   <ButtonDado newTip={newTip} />
                </div>
             </div>
+
+            <div class="attribution">
+               <div>
+                  Challenge by <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor</a>.
+               </div>
+               <div>
+                  Coded by <a href="https://www.frontendmentor.io/profile/Guilhermee19" target="_blank">Guilherme Santana Rocha</a>.
+               </div>
+            </div>
          </div>
       )
    }

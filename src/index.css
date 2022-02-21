@@ -99,3 +99,28 @@
     transform: scale(1.5) rotate(0deg);
   }
 }
+
+.attribution{
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution div,
+.attribution div a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all .5s;
+  line-height: 1.5;
+}
+
+.attribution div a:hover{
+  color: #52ffab;
+  transition: all .5s;
+}
