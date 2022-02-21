@@ -1,37 +1,37 @@
 import { useEffect, useState } from 'react';
 import { DadoIcon, LineWebIcon, LineMobileIcon } from './components/Icons'
 import { ButtonDado } from './components/Buttons/Buttons'
-// import api from './service/app';
+import api from './service/app';
 
 const App = () => {
    const [tip, setTip] = useState({});
    const [loading, setLoading] = useState(true);
 
    async function newTip(){
-  //     setLoading(true)
-  //     try{
-  //        const response = await api.get()
-  //        setTip(response.data.slip)
-  //     }  
-  //     catch{
-  //        console.log('erro')
-  //     }    
-  //     // setTimeout(() => {
-  //        setLoading(false)
-  //     // }, 500);
+      setLoading(true)
+      try{
+         const response = await api.get()
+         setTip(response.data.slip)
+      }  
+      catch{
+         console.log('erro')
+      }    
+      // setTimeout(() => {
+         setLoading(false)
+      // }, 500);
    } 
    
-  //  useEffect(() => {
-  //     console.log('new')
-  //     screenTip()
-  //  }, [loading])
+   useEffect(() => {
+      console.log('new')
+      screenTip()
+   }, [loading])
 
 
-  //  setTimeout(() => {
-  //     if(loading && Object.keys(tip).length === 0){
-  //        newTip()
-  //     }
-  //  }, 1000);
+   setTimeout(() => {
+      if(loading && Object.keys(tip).length === 0){
+         newTip()
+      }
+   }, 1000);
 
    const screenTip = () =>{
       return (
